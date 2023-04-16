@@ -1,0 +1,40 @@
+
+# My Hotkeys
+
+Print
+	scrnsht
+shift + Print
+	scrnshtf
+
+XF86Audio{RaiseVolume}
+	pamixer -i 5; kill -44 $(pidof dwmblocks)
+
+XF86Audio{LowerVolume}
+	pamixer -d 5; kill -44 $(pidof dwmblocks)
+
+XF86Audio{Mute}
+	pamixer -t; kill -44 $(pidof dwmblocks)
+
+XF86Audio{Play}
+	playerctl play-pause
+
+XF86Audio{Next}
+	playerctl next
+
+XF86Audio{Prev}
+	playerctl previous
+
+super + b
+	firefox
+
+super + shift + b
+	firefox --private-window
+
+super + o
+	flatpak run org.telegram.desktop
+
+super + f
+	thunar
+
+super + c
+	gajim

@@ -1,0 +1,23 @@
+#!/bin/sh
+# Volume for slstatus
+vol="$(pamixer --get-volume)"
+
+
+[ $(pamixer --get-mute) = true ] && echo "[  ]" && exit
+
+
+#if [ $(pamixer --get-mute) = true ]; then
+#	icon=""
+if [ "$vol" -gt "69" ]; then
+	icon=""
+elif [ "$vol" -gt "30" ]; then
+	icon=""
+elif [ "$vol" -gt "0" ]; then
+	icon=""
+else
+	echo "[  ]" && exit
+fi
+
+echo "[ $icon $vol% ]"
+
+

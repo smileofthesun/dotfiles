@@ -1,0 +1,21 @@
+#!/bin/sh
+# Battery plugin for slstatus
+battery=/sys/class/power_supply/BAT0
+capacity=$(cat "$battery/capacity")
+
+if [ "$capacity" -gt "98" ]; then
+#	echo "[  ]"
+	echo " "
+elif [ "$capacity" -gt "74" ]; then
+	icon=""
+elif [ "$capacity" -gt "49" ]; then
+	icon=""
+elif [ "$capacity" -gt "14" ]; then
+	icon=""
+elif [ "$capacity" -gt "0"]; then
+	icon=""
+else
+	echo "[   $capacity% ]" && exit
+fi
+
+echo "[ $icon  $capacity% ]"

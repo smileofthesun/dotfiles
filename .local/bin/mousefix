@@ -1,0 +1,8 @@
+#!/bin/sh
+# Disable mouse acceleration when you open terminal
+for id in `xinput --list | grep -w 'Logitech USB Receiver ' | perl -ne 'while (m/id=(\d+)/g){print "$1\n";}'`; do
+	notify-send -t 500 'Mouse fixed'
+	xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1
+	xinput --set-prop $id 'libinput Accel Speed' 0
+done
+
