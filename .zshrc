@@ -73,5 +73,5 @@ alias \
 
 
 # Load syntax highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.config/shell/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/shell/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
