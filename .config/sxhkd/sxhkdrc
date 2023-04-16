@@ -31,7 +31,7 @@ super + shift + b
 	firefox --private-window
 
 super + o
-	flatpak run org.telegram.desktop
+	telegram-desktop
 
 super + f
 	thunar
