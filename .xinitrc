@@ -3,6 +3,8 @@ xset s off
 xset -dpms
 xset s noblank
 
+export GNOME_KEYRING_CONTROL=$(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 pipewire &
 pipewire-pulse &
