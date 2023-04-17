@@ -48,7 +48,7 @@ alias \
 	dmpv="devour mpv" \
 	ro="redshift -O 2500k" \
 	rf="redshift -x" \
-
+	p="sudo pacman" \
 
 # Commands System
 alias \
