@@ -2,5 +2,5 @@
 # Screenshot fullscreen
 filename="$(date "+%Y-%m-%d-%H:%M:%S")"
 import -window root "${HOME}/pictures/screenshots/${filename}.jpg"
-xclip -selection clipboard -t image/png -i "${HOME}/documents/screenshots/${filename}.jpg"
+xclip -selection clipboard -t image/png -i "${HOME}/pictures/screenshots/${filename}.jpg"
 
