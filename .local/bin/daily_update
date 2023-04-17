@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Update repositories and packages
+sudo pacman -Syu --noconfirm
+
+# Update AUR packages using yay
+yay -Syu --noconfirm
