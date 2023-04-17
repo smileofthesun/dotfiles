@@ -1,6 +1,6 @@
 #!/bin/bash
 # Screenshot 
 filename="$(date "+%Y-%m-%d-%H:%M:%S")"
-import "${HOME}/documents/screenshots/${filename}.jpg"
+import "${HOME}/pictures/screenshots/${filename}.jpg"
 xclip -selection clipboard -t image/png -i "${HOME}/documents/screenshots/${filename}.jpg"
 
