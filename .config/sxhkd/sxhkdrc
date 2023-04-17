@@ -25,10 +25,10 @@ XF86Audio{Prev}
 	playerctl previous
 
 super + b
-	mullvad-browser
+	librewolf
 
 super + shift + b
-	mullvad browser --private-window
+	librewolf --private-window
 
 super + o
 	telegram-desktop
